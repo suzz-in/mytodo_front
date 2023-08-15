@@ -15,7 +15,7 @@ const TodoList = () => {
 
     return(
         <article>
-           {todos.length === 0 ? <span className="mb-2">오늘 할 일은 무엇인가요?😇</span> : todos.map((todo)=> <TodoItem todo={todo} key={todo.id}/>) }
+           {todos.length === 0 ? <div className="pt-8">오늘 할 일은 무엇인가요?😇</div> : todos.map((todo)=> <TodoItem todo={todo} key={todo.id}/>) }
         </article>
     )
 }

@@ -22,8 +22,8 @@ const TodoCreate = () => {
 
     return (
         <form onSubmit={handleAddTodo} className="flex gap-2 mt-2">
-            <input autoFocus placeholder="오늘 할 일😝" value={input} onChange={e => setInput(e.target.value)} className="border-solid p-1"/>
-            <button className="w-20 text-m">등록하기</button>
+            <input autoFocus placeholder="오늘 할 일😝" value={input} onChange={e => setInput(e.target.value)} className="border-2 border-solid  border-slate-300 rounded-lg p-1"/>
+            <button className="w-20 text-m bg-slate-300">등록하기</button>
         </form>
     )
 }
