@@ -12,7 +12,6 @@ const TodoList = () => {
 
         const todos = ListState();
 
-        console.log("튜듀",todos)
 
     return(
         <article>

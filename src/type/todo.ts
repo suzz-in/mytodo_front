@@ -8,4 +8,4 @@ export type TodoState = Todo[];
 
 
 export type Action = 
-{type: "ADD"; text: string} | {type: "EDIT"; id: number} | {type: "DELETE"; id:number}
+{type: "ADD"; text: string} | {type: "ONCHECK"; id: number} | {type: "DELETE"; id:number} |{type : "EDIT"; text: string, id: number, done: boolean}

@@ -16,8 +16,8 @@ const todoReducer = (state : TodoState, action: Action) => {
   
       case "DELETE":
         return state.filter((task) => task.id !== action.id);
-      case "EDIT":
-        return state.map(todo => todo.id === action.id ? {...todo, done: !todo.done} : todo);
+      case "EDIT" : 
+        return  state.map((task) => (task.id === action.id ? { ...action } : task));
       default:
         return state;
     }

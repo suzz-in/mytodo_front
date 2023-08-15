@@ -16,7 +16,6 @@ const TodoCreate = () => {
                 text: input,
             })
             setInput("")
-            console.log("완료")
         }
 
     }
